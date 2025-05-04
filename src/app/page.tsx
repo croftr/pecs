@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
       <h1 className="text-2xl text-black mb-4">Lets be Chatty</h1>
-      <div className="flex space-x-4">
+      <div className="flex flex-col items-start gap-4 space-x-4">
         {words.map((word) => {
           const Icon = wordIcons[word];
           return (
