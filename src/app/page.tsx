@@ -20,7 +20,6 @@ const pics = {
 
 // Define a mapping of words to their corresponding icons (can be empty now if you prefer images)
 const wordIcons: { [key: string]: React.ComponentType } = {
-  bye: FaHandPaper,
   byemick: FaHandPaper,
   juice: FaGlassWhiskey,
   seesoon: FaClock,
@@ -34,7 +33,7 @@ const wordIcons: { [key: string]: React.ComponentType } = {
 };
 
 export default function Home() {
-  const words = ['bye', 'juice', 'seesoon', 'byemick', 'toast', 'night', 'bedtime', 'tea', 'jelly', 'sleeptight', 'socks'];
+  const words = ['juice', 'seesoon', 'byemick', 'toast', 'night', 'bedtime', 'tea', 'jelly', 'sleeptight', 'socks'];
 
   const playWord = (word: string) => {
     try {
