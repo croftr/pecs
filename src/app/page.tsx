@@ -37,7 +37,8 @@ export default function Home() {
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center justify-center space-x-2"
               onClick={() => playWord(word)}
             >
-              {Icon && <Icon size={24} />}
+
+              {Icon && <Icon />}
               <span className="text-sm opacity-75">{word.charAt(0).toUpperCase() + word.slice(1)}</span>
             </button>
           );
