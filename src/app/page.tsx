@@ -46,7 +46,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 overflow-auto">
+    <div className="flex flex-col items-center justify-center bg-gray-100 overflow-auto pt-20 pb-20">
       <div className="flex flex-col items-start gap-4">
         {words.map((word) => (
           <div key={word} className="flex flex-col items-center">
