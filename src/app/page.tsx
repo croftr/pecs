@@ -34,7 +34,7 @@ export default function Home() {
             <button
               type="button"
               key={word}
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center justify-center space-x-2"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center justify-center space-x-2 w-full"
               onClick={() => playWord(word)}
             >
 
