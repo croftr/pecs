@@ -16,6 +16,17 @@ const pics = {
   jelly: '/images/jelly.jpg',
   sleeptight: '/images/sleeptight.jpg',
   socks: '/images/socks.jpg',
+  daddy: '/images/daddy.jpg',
+  mummy: '/images/mummy.jpg',
+  castle1: '/images/castle1.jpg',
+  castle2: '/images/castle2.jpg',
+  swimming: '/images/swimming.jpeg',
+  guitar: '/images/guitar.jpg',
+  trampoline: '/images/trampoline.jpg',
+  applepud: '/images/applepud.jpg',
+  car1: '/images/car1.jpg',
+  car2: '/images/car2.jpg',
+  park: '/images/park.jpg',
 };
 
 // Define a mapping of words to their corresponding icons (can be empty now if you prefer images)
@@ -33,7 +44,7 @@ const wordIcons: { [key: string]: React.ComponentType } = {
 };
 
 export default function Home() {
-  const words = ['juice', 'seesoon', 'byemick', 'toast', 'night', 'bedtime', 'tea', 'jelly', 'sleeptight', 'socks'];
+  const words = ['juice', 'seesoon', 'byemick', 'toast', 'night', 'bedtime', 'tea', 'jelly', 'sleeptight', 'socks', 'park', 'daddy', 'mummy', 'castle1', 'castle2', 'swimming', 'guitar', 'trampoline', 'applepud', 'car1', 'car2'];
 
   const playWord = (word: string) => {
     try {
@@ -46,14 +57,14 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center bg-gray-100 overflow-auto pt-20 pb-20">
-      <div className="flex flex-col items-start gap-4">
+    <div className="overflow-auto p-4 pt-20 pb-20">
+      <div className="flex flex-wrap justify-center gap-4">
         {words.map((word) => (
           <div key={word} className="flex flex-col items-center">
             <button
               type="button"
               key={word}
-              className="bg-blue-500 hover:bg-blue-700 rounded w-40 h-34 flex items-center justify-center overflow-hidden shadow-md active:shadow-sm active:translate-y-0.5 transition-shadow duration-100"
+              className="rounded w-60 h-50 flex items-center justify-center overflow-hidden shadow-lg hover:shadow-xl active:shadow-md active:translate-y-0.5 transition-shadow duration-150 bg-white"
               onClick={() => playWord(word)}
             >
               {pics[word] && (
@@ -62,7 +73,7 @@ export default function Home() {
                 </div>
               )}
             </button>
-            <p className="mt-2 text-sm text-gray-700">{word.charAt(0).toUpperCase() + word.slice(1)}</p>
+            {/* <p className="mt-2 text-sm text-gray-100">{word.charAt(0).toUpperCase() + word.slice(1)}</p> */}
           </div>
         ))}
       </div>
